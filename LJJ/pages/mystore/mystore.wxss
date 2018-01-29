@@ -1,0 +1,89 @@
+/* pages/mystore/mystore.wxss */
+@import "test.wxss";
+.mystore{
+  /* text-align: center; */
+  height: auto;
+  color: #999;
+}
+.mystore1{
+  margin: 20rpx 0;
+  line-height: 190rpx;
+  background-color: #fff;
+  color: #999;
+  height: 150rpx;
+  padding: 20rpx 0;
+}
+.game{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.wx{
+  height: 100rpx;
+  background: #fff;
+  line-height: 100rpx;
+  margin: 20rpx 0;
+  
+}
+.wx:before{
+  font-family: "iconfont";
+  font-size: 40rpx;
+  content: "\e633";
+  margin:0 28rpx;
+}
+text{
+  font-size: 35rpx;
+}
+.img{
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.texts{
+  float: left;
+  margin-left: 20rpx;
+  line-height: 150rpx;
+  color: #999;
+  font-size: 40rpx;
+}
+.er{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: 30rpx;
+  margin-top: 54rpx;
+}
+#icons{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+#icons:before,#icons1:before,#icons2:before{
+  font-family: "iconfont";
+  font-size: 40rpx;
+  content: "\e60b";
+  margin:0 30rpx;
+}
+#icons1:before{
+  content: "\e60c"
+}
+#icons2:before{
+  content: "\e68e"
+}
+/*退出  */
+.loginOut{
+  width: 100%;
+  margin: 20rpx 0;
+  background: darkred;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 5rpx;
+}
+

@@ -1,0 +1,195 @@
+<!--index.wxml-->
+<view class="container">
+<!--  扫二维码  -->
+    <view class='scancode' bindtap='scancode'>
+      <image src='../images/scancode.png'></image>
+    </view>
+<!--  搜索框  -->
+  <view class='search'>
+    <input placeholder='请输入您要搜索的宝贝'></input>
+  </view>
+  <view style='height:100rpx'></view>
+  <!--  轮播图  -->
+  <swiper class='swiper' indicator-dots='true' interval='3000' current='0' autoplay='true' circular='true'>
+  <swiper-item>
+    <image mode='scaleToFill' src='../images/11.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode='scaleToFill' src='../images/22.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode='scaleToFill' src='../images/11.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode='scaleToFill' src='../images/44.png'></image>
+  </swiper-item>
+  </swiper>
+  <!--  nav  -->
+  <view class='navs'>
+    <view class='{{flag?"navsSon1 navsSon":"navsSon"}}' bindtap='meau' id="meau" data-text="text">点单</view>
+    <view class='{{flag1?"navsSon1 navsSon":"navsSon"}}' bindtap='talk'>评价</view>
+    <view class='{{flag2?"navsSon1 navsSon":"navsSon"}}' bindtap='shop'>商家</view>
+  </view>
+  <!--  菜单区  -->
+<view class='mainBox'  style="display:{{dis}}">
+  <view class='mainLeft'>
+    <view class='mainLeftSon'>热 销</view>
+    <view class='mainLeftSon'>折 扣</view>
+    <view class='mainLeftSon'>套 餐</view>
+    <view class='mainLeftSon'>素 粥</view>
+    <view class='mainLeftSon'>饮 料</view>
+    <view class='mainLeftSon'>小 菜</view>
+  </view>
+  <view class='mainRight'>
+    <view class='mainRightSon'>
+      <image src="../images/1.png"></image>
+      <text class='blod'>虫草花熏鸡拼盘</text>
+      <text class='info1'>\n推荐指数5星 可单独下单</text>
+      <text class='pirce'>\n￥40</text>
+      <view class='adds'>+</view>
+    </view>
+    <view class='mainRightSon'>
+      <image src="../images/2.png"></image>
+      <text class='blod'>农家炒肉</text>
+      <text class='info1'>\n推荐指数5星 可单独下单</text>
+      <text class='pirce'>\n￥15</text>
+      <view class='adds'>+</view>
+    </view>
+    <view class='mainRightSon'>
+      <image src="../images/3.png"></image>
+      <text class='blod'>干锅花菜</text>
+      <text class='info1'>\n推荐指数5星 热销菜品</text>
+      <text class='pirce'>\n￥12</text>
+      <view class='adds'>+</view>
+    </view>
+    <view class='mainRightSon'>
+      <image src="../images/4.png"></image>
+      <text class='blod'>梅干菜烧肉套餐</text>
+      <text class='info1'>\n套餐含米饭 不需另点</text>
+      <text class='pirce'>\n￥14.5</text>
+      <view class='adds'>+</view>
+    </view>
+    <view class='mainRightSon'>
+      <image src="../images/5.png"></image>
+      <text class='blod'>油豆腐大白菜</text>
+      <text class='info1'>\n月售2500 赞13000个</text>
+      <text class='pirce'>\n￥10</text>
+      <view class='adds'>+</view>
+    </view>
+    <view class='mainRightSon'>
+      <image src="../images/6.png"></image>
+      <text class='blod'>温州平阳炒粉干</text>
+      <text class='info1'>\n舌尖上的中国的推荐小</text>
+      <text class='pirce'>\n￥20</text>
+      <view class='adds'>+</view>
+    </view>
+  </view>
+</view>
+<!--  评价区  -->
+<view class='mainTalk' style="display:{{dis1}}">
+  <view class='mainTalkTop'>
+    <view class='mainTalkTop_right'>
+      <text class='pf00 pf001'>9.5</text>
+      <text class='pf pf11'>\n商家评分</text>
+    </view>
+    <view class='mainTalkTop_mid'>
+      <text class='kw'>口味</text>
+      <text class='xx'></text>
+      <text class='xx'></text>
+      <text class='xx'></text>
+      <text class='xx'></text>
+      <text class='xx'></text>
+    </view>
+    <view class='mainTalkTop_right'>
+      <text class='pf00'>90%</text>
+      <text class='pf pf11'>\n配送满意度</text>
+    </view>
+  </view>
+  <view class='mainTalkCon'>
+    <text class='alls'>全部 999</text>
+    <text class='alls'>好评 999</text>
+    <text class='alls'>差评 0</text>
+    <text class='alls'>好吃 999</text>
+    <!--评论内容  -->
+    <view class='mainTalkConSon'>
+      <view class='mainTalkConSon_left'>
+        <image src='../images/6.png'></image>
+      </view>
+      <view class='mainTalkConSon_right'>
+      <text class='rightDate'>2018.01.01</text>
+        <text class='userName'>大力1999</text>
+        <text class='p0f'>\n评分</text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='cons'>\n这次终于次终于次终于次终于次终于次终于不是兼并了，好吃好吃\n</text>
+        <text class='zan'>喜欢</text>
+      </view>
+    </view>
+
+    <view class='mainTalkConSon'>
+      <view class='mainTalkConSon_left'>
+        <image src='../images/1.png'></image>
+      </view>
+      <view class='mainTalkConSon_right'>
+      <text class='rightDate'>2018.12.01</text>
+        <text class='userName'>小王八犊子</text>
+        <text class='p0f'>\n评分</text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='cons'>\n这次终于不是兼并了，好吃好吃\n</text>
+        <text class='zan'>喜欢</text>
+      </view>
+    </view>
+
+    <view class='mainTalkConSon'>
+      <view class='mainTalkConSon_left'>
+        <image src='../images/3.png'></image>
+      </view>
+      <view class='mainTalkConSon_right'>
+      <text class='rightDate'>2018.12.28</text>
+        <text class='userName'>大力1999</text>
+        <text class='p0f'>\n评分</text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='cons'>\n这次终于不是兼并了，好吃好吃\n</text>
+        <text class='zan'>喜欢</text>
+      </view>
+    </view>
+
+    <view class='mainTalkConSon'>
+      <view class='mainTalkConSon_left'>
+        <image src='../images/2.png'></image>
+      </view>
+      <view class='mainTalkConSon_right'>
+        <text class='userName'>大力1999</text>
+        <text class='p0f'>\n评分</text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='xx'></text>
+        <text class='cons'>\n这次终于不是兼并了，好吃好吃\n</text>
+        <text class='zan'>喜欢</text>
+      </view>
+    </view>
+  </view>
+  
+
+</view>
+<!--  s商家  -->
+<view class='mainShop' style="display:{{dis2}}">
+  <view class='mainShopSon'>长河街道8848号</view>
+  <view class='mainShopSon1'>查看食品安全档案</view>
+  <view class='mainShopSon2'>配送服务：由美团提供配送服务</view>
+  <view class='mainShopSon1'>配送时间：8.00-22.00</view>
+</view>
+</view>

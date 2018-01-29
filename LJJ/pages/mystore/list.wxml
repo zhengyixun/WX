@@ -1,0 +1,4 @@
+<!--pages/mystore/mystore.wxml-->
+<view class='mystore'>  
+  <map style='width:100%;height:800rpx;' longitude='23' longitude='118'  show-location></map>
+</view>

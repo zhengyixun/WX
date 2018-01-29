@@ -1,0 +1,36 @@
+<!--pages/mystore/mystore.wxml-->
+
+<view class='mystore'>
+    <view class='mystore1'>
+        <image src='../images/headPhoto.jpeg' class='img'></image>
+        <text class='texts'>起一个好名字</text>
+        <image src='../images/erweima.png' class='er' bindtap='erweima'></image>
+    </view>
+    <view class='game firstGame'>
+      <text  id='icons'>钱包</text>    
+    </view>
+    <view class='game'>
+      <text  id='icons1'>相册</text> 
+    </view>
+    <view class='game'>
+      <text  id='icons2' bindtap='camera'>照相</text> 
+    </view>
+    <view class='game'>
+      <text  id='icons1' bindtap='musices' bindtap='plays'>音乐</text> 
+    </view>
+    <view class='wx'>
+      <text>设置</text>
+    </view>
+    <!-- 退出  -->
+    <view class='loginOut' bindtap='loginOut'>退 出</view>
+    <!--弹出框-->
+<modal 
+    title="退出应用"
+     hidden="{{hiddenModal}}"
+     confirm-text="取消"
+     cancel-text="退出"
+     bindconfirm="listenerConfirm"
+     bindcancel="listenerCancel">
+     您是否真的要退出小程序？
+     </modal>
+</view>

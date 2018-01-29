@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mystore/mystore",
+    "pages/mystore/list",
+    "pages/mystore/camera",
+    "pages/mystore/scancode"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "老焦家",
+    "navigationBarTextStyle":"black"
+    
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/index.png",
+        "iconPath": "pages/images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/images/list.png",
+        "iconPath": "pages/images/list.png",
+        "pagePath": "pages/mystore/list",
+        "text": "位置"
+      },
+      {
+        "selectedIconPath": "pages/images/my.png",
+        "iconPath": "pages/images/my.png",
+        "pagePath": "pages/mystore/mystore",
+        "text": "我的"
+      }
+    ]
+  }
+}
