@@ -1,0 +1,6 @@
+<view class="BF" catchtap="clicks">
+123456
+    <component key="tabBar" name="tab-bar"/>
+    <component key="C1" name="C1"/>
+    <component key="Chooseimg" name="Chooseimg"/>
+</view>

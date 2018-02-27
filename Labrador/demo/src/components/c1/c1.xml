@@ -1,0 +1,4 @@
+<view class="c1" >
+    <text catchtap="videos" style="padding:50rpx">wx.choosevideowx.choosevideowx.choosevideo</text>
+    <video src="{{state.videoSource}}" hidden="{{state.videoHidden}}" style="width: 100%; height: 300rpx"/>
+</view>

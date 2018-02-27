@@ -1,0 +1,4 @@
+<view class="chooseimg">
+    <text class="texts" catchtap="chooseimg">chooseimg</text>
+    <img src="{{state.imgsrc}}" alt=""/>
+</view>
